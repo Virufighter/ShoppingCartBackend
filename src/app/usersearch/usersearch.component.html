@@ -1,0 +1,37 @@
+<app-usernav></app-usernav>
+<div class="container">
+    <div class="row g-3 mt-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <label for="" class="form-label">Product Name</label>
+            <input name="name" [(ngModel)]="name" type="text" class="form-control">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <button (click)="readValue()" class="btn btn-success">Search</button>
+        </div>
+    </div>
+    
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let i of sdata">
+                    <div  class="card h-200" >
+                        <img height="200px" class="rounded-circle" src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <p class="card-text">Title:{{i.name}}</p>
+                          <p class="card-text">Price:${{i.price}}</p>
+                          <p class="card-text">{{i.description}}</p>
+                          <p class="card-text">Category:{{i.category}}</p>
+                          
+                      
+                          
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+

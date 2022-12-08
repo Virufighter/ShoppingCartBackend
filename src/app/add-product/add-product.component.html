@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="row g-3">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="" class="form-label"> name</label>
+                <input name="name" [(ngModel)]="name" type="text" class="form-control">
+            </div>
+           
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="" class="form-label"> Description</label>
+                <textarea name="description" [(ngModel)]="description" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="" class="form-label">Price</label>
+                <input name="price" [(ngModel)]="price" type="text" class="form-control">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="" class="form-label">Category</label>
+                <input name="Category" [(ngModel)]="category" type="category" class="form-control">
+            </div>
+            
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <label for="" class="form-label">image</label>
+                <input type="text" name="image" [(ngModel)]="image" id="" class="form-control">
+            </div>
+            
+           
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <button (click)="readvalue()" class="btn btn-success">Submit</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
